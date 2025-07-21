@@ -1,0 +1,11 @@
+weistrass: 0
+teorema: 5
+derivabile: 3
+limite: 5
+integrale: 4
+continuità: 4
+serie: 4
+funzione: 5
+dominio: 4
+zeri: 3
+estremo: 2
