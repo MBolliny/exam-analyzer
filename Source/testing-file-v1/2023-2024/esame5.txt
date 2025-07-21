@@ -1,0 +1,13 @@
+ESERCIZI
+
+1. Calcolare l’integrale improprio ∫₁^∞ 1 / (x log(x)) dx.
+
+2. Studiare l’intervallo di definizione e di derivabilità di f(x) = √(x - ln(x)).
+
+3. Determinare se la funzione f(x) = x sin(1/x) è derivabile in x = 0.
+
+4. Stabilire la convergenza della serie ∑ n=1 a ∞ (-1)^n / n^p al variare di p ∈ ℝ.
+
+TEORIA
+
+- Enunciare il Lemma di Fermat.
