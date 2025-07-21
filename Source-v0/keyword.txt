@@ -1,0 +1,11 @@
+weistrass
+teorema
+derivabile
+limite
+integrale
+continuità
+serie
+funzione
+dominio
+zeri
+estremo
