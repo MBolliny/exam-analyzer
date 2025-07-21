@@ -2,55 +2,53 @@ import os
 
 # inserimento cartella su cui svolgere analisi
 toAnalise_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/Source-v0/testing-file-v0"
+Keyword_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/Source-v0/keyword.txt"
+
+# 1. FUNZIONE analisiFile
+def analisiFile(percorso_file, dizionario_conta):
+    with open(percorso_file, "r") as f:
+        riga_letta = f.readline()
+        while riga_letta != "":
+            parola = riga_letta.strip()
+            if parola in dizionario_conta:
+                dizionario_conta[parola] += 1
+            riga_letta = f.readline()
+
+# 2. FUNZIONE analisiCartella
+def analisiCartella(percorso, dizionario_conta):
+    contenuto = os.listdir(percorso)
+    for elemento in contenuto:
+        percorso_completo = os.path.join(percorso, elemento)
+        print(percorso_completo)
+        if os.path.isdir(percorso_completo):
+            print("📁", elemento, "è una cartella")
+            analisiCartella(percorso_completo, dizionario_conta)
+
+        elif os.path.isfile(percorso_completo):
+            if elemento == ".DS_Store":
+                continue  # salta questo file
+
+            print("📄", elemento, "è un file")
+            analisiFile(percorso_completo, dizionario_conta)
+
+        elif os.path.isfile(percorso_completo):
+            print("📄", elemento, "è un file")
+            analisiFile(percorso_completo, dizionario_conta)
 
 # Verifica se il percorso esiste
 # se esiste -> vado avanti con progetto
+
 if os.path.exists(toAnalise_path) and os.path.exists(Keyword_path):
-    # Apre entrambi i file
-    with open(toAnalise_path, "r") as fA, open(Keyword_path, "r") as fK:
 
-        # Inizializza la lista
-        keywords_list = []
+    with open(Keyword_path, "r") as fK:
+        keywords_list = [line.strip() for line in fK]
 
-        # Legge riga per riga le parole chiave e le aggiunge alla lista
-        keyword_letta = fK.readline()
-        while keyword_letta != "":
-            keywords_list.append(keyword_letta.strip())  # .strip() toglie \n e spazi
-            keyword_letta = fK.readline()
+    dizionario_conta = {keyword: 0 for keyword in keywords_list}
 
-        print("Lista delle parole chiave:", keywords_list)
+    analisiCartella(toAnalise_path, dizionario_conta)
 
-        # Crea un dizionario inizializzato a zero per ciascuna parola chiave
-        dizionario_conta = {keyword: 0 for keyword in keywords_list}
-        print("Dizionario iniziale:", dizionario_conta)
-
-        contenuto = os.listdir(toAnalise_path)
-        # per ogni elemento della lista crare un path e verificare che questo sia cartella o docuento
-        for elemento in contenuto:
-
-            # creo path completo per aprire file e cartelle e verificarne idenita1
-            percorso_completo = os.path.join(toAnalise_path, elemento)
-
-            if os.path.isdir(percorso_completo):  # è una cartella -> cosa ricorsiva fino a che non ottengo file
-                print(elemento, "è cartella")
-
-            elif os.path.isfile(percorso_completo):  # è un file -> apro e confronto
-                # apro il file
-                print(elemento, "è file")
-                file = open(elemento, "r")
-
-    # stampa finale
-    print("Dizionario finale:", dizionario_conta)
+    for parola, conteggio in dizionario_conta.items():
+        print(parola, ":", conteggio)
 
 else:
-    print("Uno o entrambi i file non esistono")
-
-
-def analisiFile ():
-    # leggo riga per riga del file "toAnalise" e verifico che sia un elemento
-    riga_letta = fA.readline()
-    while riga_letta != "":
-        parola = riga_letta.strip()  # toglie spazi e \n
-        if parola in dizionario_conta:
-            dizionario_conta[parola] += 1
-        riga_letta = fA.readline()
+    print("❌ Percorso non valido")
