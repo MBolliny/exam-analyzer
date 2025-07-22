@@ -1,8 +1,8 @@
 import os
 
 # inserimento file su cui svolgere analisi
-toAnalise_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/Source-v0/testing-file-v0/esame1.txt"
-Keyword_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/Source-v0/keyword.txt"
+toAnalise_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/document/basic/esame1.txt"
+Keyword_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/keyword/basic_keyword/basic.txt"
 
 if os.path.exists(toAnalise_path) and os.path.exists(Keyword_path):
     # Apre entrambi i file

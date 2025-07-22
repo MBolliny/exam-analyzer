@@ -1,0 +1,7 @@
+funzione derivabile
+punto di non derivabilità
+cuspide
+punto angoloso
+continuità e derivabilità
+derivata sinistra
+derivata destra

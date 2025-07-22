@@ -7,7 +7,6 @@ ESERCIZI
 3. Studiare la continuità e i limiti di f(x) = (e^x - 1) / x per x → 0.
 
 4. Determinare se la serie ∑ n=1 a ∞ log(1 - n² / e^n) converge.
- 
-TEORIA
 
+TEORIA
 - Enunciare il Teorema di Weierstrass (funzioni continue su intervalli chiusi).

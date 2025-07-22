@@ -1,0 +1,7 @@
+teorema degli zeri
+teorema di Lagrange
+teorema di Rolle
+teorema di Weierstrass
+teorema del valore intermedio
+teorema di Bolzano
+teorema di De L’Hôpital

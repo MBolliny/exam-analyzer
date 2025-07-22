@@ -1,11 +1,7 @@
-weistrass: 0
-teorema: 5
-derivabile: 3
-limite: 5
-integrale: 4
-continuità: 4
-serie: 4
-funzione: 5
-dominio: 4
-zeri: 3
-estremo: 2
+teorema degli zeri: 0
+teorema di lagrange: 0
+teorema di rolle: 0
+teorema di weierstrass: 1
+teorema del valore intermedio: 0
+teorema di bolzano: 0
+teorema di de l’hôpital: 0
