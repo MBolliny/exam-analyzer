@@ -1,7 +1,0 @@
-integrale definito
-integrale improprio
-area sotto la curva
-funzione integrabile
-discontinuità eliminabile
-criterio del confronto per integrali
-valore medio integrale

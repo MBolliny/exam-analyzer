@@ -1,7 +1,0 @@
-teorema degli zeri: 0
-teorema di lagrange: 0
-teorema di rolle: 0
-teorema di weierstrass: 1
-teorema del valore intermedio: 0
-teorema di bolzano: 0
-teorema di de l’hôpital: 0

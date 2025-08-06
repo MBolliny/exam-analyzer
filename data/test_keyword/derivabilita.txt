@@ -1,0 +1,20 @@
+derivabilità  
+derivata  
+funzione derivabile  
+continuità  
+punto di non derivabilità  
+punto angoloso  
+cuspide  
+discontinuità  
+regolarità  
+derivata laterale  
+derivata destra  
+derivata sinistra  
+tangente  
+coefficiente angolare  
+differenziabilità  
+non derivabile  
+grafico con cuspide   
+massimo locale  
+minimo locale  
+punto stazionario  

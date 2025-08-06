@@ -1,0 +1,19 @@
+limite  
+limite destro  
+limite sinistro  
+limite finito  
+limite infinito  
+tendente a  
+asintoto verticale  
+asintoto orizzontale  
+asintoto obliquo  
+forma indeterminata  
+0 su 0  
+infinito su infinito  
+teorema del confronto  
+infinitesimo  
+infinito  
+punto di accumulazione  
+intorno  
+funzione crescente  
+funzione decrescente  

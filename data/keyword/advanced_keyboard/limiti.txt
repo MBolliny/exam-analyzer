@@ -1,7 +1,0 @@
-limite destro
-limite sinistro
-limite infinito
-limite notevole
-limite indeterminato
-limite per x che tende a zero
-limite per x che tende a infinito

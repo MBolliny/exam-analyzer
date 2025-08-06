@@ -1,0 +1,14 @@
+integrale: 2
+derivata: 3
+elettrica: 6
+informatica: 6
+elettronica: 6
+cognome: 6
+nome: 6
+teorema di lagrange: 2
+limite: 4
+lemma di fermat: 2
+teorema fondamentale del calcolo: 4
+punto angoloso: 2
+teorema degli zeri: 2
+telecomunicazioni: 1

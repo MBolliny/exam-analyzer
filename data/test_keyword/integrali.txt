@@ -1,0 +1,18 @@
+integrale  
+integrale definito  
+integrale indefinito  
+primitiva  
+metodo di integrazione  
+integrazione per parti  
+integrazione per sostituzione  
+area sottesa  
+funzione integrabile  
+discontinuità integrabile  
+integrale improprio  
+limite dell'integrale  
+teorema fondamentale del calcolo  
+proprietà dell'integrale  
+costante di integrazione  
+integrale di funzione razionale  
+funzione continua a tratti
+F(x)
