@@ -6,41 +6,55 @@ from print import print_log_list, print_log_diz, print_log_count
 
 def main():
     # cartelle debug
-    toAnalise_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents"
+    toAnalise_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22"
     Keyword_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword"
     Log_path = "/Users/MatteoBollini/Documents/GitHub/exam-analyzer/output/log.txt"
 
+    with open(Log_path, "w") as f:
+        f.write("========= Report Analisi =========\n")
+
     # ============ FILE KEYWORD ============
+    type = "k"
 
     # acquisisco lista di file contenenti parole chiave
     keyword_file_list = FileListCreator(Keyword_path)
+    # print_log_list(keyword_file_list, Log_path, type)
 
     # dizionario estensioni
     extension_diz_k = extensionFinder(keyword_file_list)
+    print_log_diz(extension_diz_k, Log_path, type)
 
     # lista di tuple
     lista_tuple = TupleCreator_keyword(extension_diz_k)
 
     # ============ FILE DA ANALIZZARE ============
+    type = "d"
 
     # acquisisco lista di file contenenti parole chiave
     document_file_list = FileListCreator(toAnalise_path)
+    #  print_log_list(document_file_list, Log_path, type)
 
     # dizionario estensioni
     extension_diz_d = extensionFinder(document_file_list)
+    print_log_diz(extension_diz_d, Log_path, type)
 
     # lista di parole pulite da punteggiatura
     dizionario_conta = {}
+
+    # stampa su file
+    with open(Log_path, "a") as l:
+        l.write("\nAnalisi CONTEGGIO:\n")
+
+    # confronto e conteggio
     for chiave, valore in extension_diz_d.items():
         full_word_list = ListCreator_document(chiave, valore)
 
         # ============ ANALISI e CONTEGGIO ============
-
         dizionario_conta = confronto(lista_tuple, full_word_list, dizionario_conta)
         # print(dizionario_conta)
 
-        # stampa del risultato su file
-        print_log_count(dizionario_conta, Log_path)
+    # stampa del risultato su file
+    print_log_count(dizionario_conta, Log_path)
 
 if __name__ == "__main__":
     main()

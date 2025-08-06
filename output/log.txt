@@ -1,14 +1,37 @@
-integrale: 2
-derivata: 3
-elettrica: 6
-informatica: 6
-elettronica: 6
-cognome: 6
-nome: 6
+========= Report Analisi =========
+
+dizionario file KEYWORD:
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/integrali.txt: txt
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/AN1_230703.pdf: pdf
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/limiti.txt: txt
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/derivabilita.txt: txt
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/base.txt: txt
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_keyword/teoremi.txt: txt
+
+dizionario file DOCUMENT:
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22/AM1_2021-22_Itinere_2_20220113.pdf: pdf
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22/AN1_220627.pdf: pdf
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22/AM1_appello-20220609.pdf: pdf
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22/AM1_2021-22_Appello_20220201.pdf: pdf
+/Users/MatteoBollini/Documents/GitHub/exam-analyzer/data/test_documents/Temi_esame_2021-22/AM1_20211110_correzione_prima_prova.pdf: pdf
+
+Analisi CONTEGGIO:
+integrale: 4
+teorema fondamentale del calcolo: 6
+derivata: 5
 teorema di lagrange: 2
-limite: 4
+teorema di rolle: 1
+dimostrazione: 1
+intorno: 2
+massimo locale: 2
+minimo locale: 3
+elettrica: 2
+ing.dell'automazione: 1
+informatica: 2
+telecomunicazioni: 2
+elettronica: 2
+cognome: 4
+nome: 4
 lemma di fermat: 2
-teorema fondamentale del calcolo: 4
-punto angoloso: 2
-teorema degli zeri: 2
-telecomunicazioni: 1
+non derivabile: 2
+limite: 1

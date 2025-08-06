@@ -56,7 +56,7 @@ def confronto(lista_tuple, full_word_list, dizionario_conta):
         for i in range(len(full_word_list) - n + 1):
             if tuple(full_word_list[i:i + n]) == keyword:
                 keyword_trovata = True
-                break  # bastava trovarla una volta in questo file
+                break
 
         if keyword_trovata:
             if keyword in dizionario_conta:
