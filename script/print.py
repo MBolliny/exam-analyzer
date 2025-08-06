@@ -9,7 +9,7 @@ def print_log_list(list_input, Log_path):
             log.write(elemento)
         log.write("\n")
 
-# LISTE
+# DIZ
 def print_log_diz(diz_input, Log_path):
     with open(Log_path, "w") as log:
         for chiave, valore in diz_input.items():
