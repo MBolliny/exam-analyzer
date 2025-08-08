@@ -24,12 +24,6 @@ def print_log_diz(diz_input, Log_path, type):
         if type == "d":
             log.write("\ndizionario file DOCUMENT:\n")
 
-<<<<<<< HEAD
-=======
-# DIZ
-def print_log_diz(diz_input, Log_path):
-    with open(Log_path, "w") as log:
->>>>>>> 53987f9df2a1f7d77c776bbc458e9df558661a99
         for chiave, valore in diz_input.items():
             log.write(f"{chiave}: {valore}\n")
 

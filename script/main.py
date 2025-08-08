@@ -18,7 +18,6 @@ def main():
 
     # acquisisco lista di file contenenti parole chiave
     keyword_file_list = FileListCreator(Keyword_path)
-    # print_log_list(keyword_file_list, Log_path, type)
 
     # dizionario estensioni
     extension_diz_k = extensionFinder(keyword_file_list)
@@ -32,7 +31,6 @@ def main():
 
     # acquisisco lista di file contenenti parole chiave
     document_file_list = FileListCreator(toAnalise_path)
-    #  print_log_list(document_file_list, Log_path, type)
 
     # dizionario estensioni
     extension_diz_d = extensionFinder(document_file_list)
@@ -42,8 +40,8 @@ def main():
     dizionario_conta = {}
 
     # stampa su file
-    with open(Log_path, "a") as l:
-        l.write("\nAnalisi CONTEGGIO:\n")
+    with open(Log_path, "a") as log:
+        log.write("\nAnalisi CONTEGGIO:\n")
 
     # confronto e conteggio
     for chiave, valore in extension_diz_d.items():
